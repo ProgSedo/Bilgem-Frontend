@@ -1,0 +1,15 @@
+.gamebar{
+    height: 60px;
+    width: 100vw;
+    outline: solid 1px yellow;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1rem;
+}
+
+.gamebarbutton{
+  width: 100px;
+  height: 50px;
+  background-color: pink;
+}
