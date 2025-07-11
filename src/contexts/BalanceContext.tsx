@@ -1,3 +1,3 @@
 import { createContext } from "react";
 
-export const BalanceContext = createContext(100);
+export const BalanceContext = createContext<[number, React.Dispatch<React.SetStateAction<number>>]>([100, () => {}]);
