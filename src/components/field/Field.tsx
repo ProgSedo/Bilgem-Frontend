@@ -1,16 +1,18 @@
 "use client";
 
 import Block from "../block/Block"
+import styles from "./Field.module.css"
 
-interface FieldType{
-    rowNumber: number;
-    columnNumber: number;
-}
-
-export default function Field({rowNumber, columnNumber}: FieldType){
+export default function Field(){
     return(
-        <div>
-            <Block></Block>
+        <div className={styles.field}>
+            {Array.from({ length: 4 }).map((_, row) => (
+                <div key={row} style={{display:"flex", gap: "10px"}}>
+                {Array.from({ length: 4 }).map((_, col) => (
+                    <Block key={`4 * ${row} + ${col}`} />
+                ))}
+                </div>
+            ))}
         </div>
     );
 }

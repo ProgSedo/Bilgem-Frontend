@@ -13,3 +13,12 @@
   height: 50px;
   background-color: pink;
 }
+
+.gamebarlabel{
+  width: 150px;
+  height: 50px;
+  background-color: pink;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
